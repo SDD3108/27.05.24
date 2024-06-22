@@ -1,0 +1,32 @@
+.header__top {
+    @extend %flex-row; 
+    width: 1177px;
+    margin-top: 43px;
+}
+.nav__list {
+    @extend %flex-row; 
+    width: 507px;
+    a {
+        @include font-style ($main-color,16px,$main-font,400,none)
+    }
+}
+.header__bottom {
+    width: 1128px;
+    margin: 66px auto 0;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        @include font-style ($main-color,75px,$main-font,600,none)
+    }
+    p {
+        padding-top: 22px;
+        @include font-style ($main-color,16px,$main-font,400,142%)
+    }
+    button {
+        width: 200px;
+        height: 68px;
+        background-color: $base-color;
+        margin-top: 28px;
+        @include font-style ($white-color,16px,$main-font,400,none)
+    }
+}

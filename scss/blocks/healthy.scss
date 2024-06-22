@@ -1,0 +1,35 @@
+.healthy__content {
+    margin: 133px auto 0;
+    @extend %flex-row;
+}
+.healthy__content-canvas {
+    width: 541px;
+    height: 608px;
+    background-color: #42737A;
+    // position: relative;
+}
+.canvas__img {
+    padding: 0 48px 95px 48px;
+    // position: absolute;
+    // top: 0;
+    // left: 48px;
+}
+.healthy__content-text {
+    height: 430.39px;
+    position: relative;
+    p {
+        @include font-style ($main-color,15px,$main-font,500,none)
+    }
+    ul {
+        height: 179.39px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @extend %flex-column;
+    }
+    li {
+        gap: 22px;
+        @extend %flex-class;
+        @include font-style ($main-color,16px,$main-font,400,none)
+    }
+}

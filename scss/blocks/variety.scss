@@ -1,0 +1,42 @@
+.variety__content {
+    margin-top: 190px;
+}
+.variety__content-title{
+    p {
+        text-align: center;
+        @include font-style ($main-color,15px,$main-font,500,none)
+    }
+    h2 {
+        text-align: center;
+    }
+}
+.variety__content-blocks {
+    @extend %grid-row;
+    grid-template-columns: repeat(4,292.5px);
+    grid-template-rows: 292.5px 292.5px;
+    margin-top: 70px;
+}
+.block__text {
+    background-color: $block-bg;
+    border: 1px solid $base-color; 
+}
+.block__text-center {
+    margin: 37px 37.5px;
+    h3 {
+        @include font-style ($main-color,32px,$main-font,500,none)
+    }
+    p {
+        margin-top: 25px;
+        @include font-style ($main-color,16px,$main-font,400,none)
+    }
+}
+.button {
+    width: 148px;
+    height: 42px;
+    background-color: $variety-button-bg;
+    margin-top: 38px;
+    @extend %flex-center;
+    a {
+        @include font-style ($base-color,15px,$main-font,500,none)
+    }
+}

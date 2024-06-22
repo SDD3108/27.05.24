@@ -1,0 +1,37 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './mixins-extends.scss';
+@import './../blocks/header.scss';
+@import './pros.scss';
+@import './healthy.scss';
+@import './veggie.scss';
+@import './variety.scss';
+@import './popular.scss';
+@import './ingredients.scss';
+@import './footer.scss';
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.logo {
+    @include font-style ($base-color,32px,$main-font,500,none)
+}
+.bottom__text {
+    width: 553px;
+    padding-top: 39px;
+}
+.bottom__img {
+    width: 468px;
+}
+h2 {
+    padding-top: 20px;
+    @include font-style ($main-color,60px,$main-font,500,none)
+}
+input {
+    width: 205px;
+    height: 50px;
+    background-color: var($input-color);
+    opacity: 0.51;
+    margin-top: 37px;
+    @include font-style ($main-color,14px,$main-font,400,none)
+}

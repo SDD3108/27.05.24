@@ -1,0 +1,37 @@
+.pros__content {
+    @extend %flex-column;
+    height: 185px;
+    margin-top: 88px;
+}
+.line {
+    width: 1170px;
+    height: 2px;
+    background-color: var($line-color);
+    opacity: 0.15;
+}
+.pros__content-info {
+    @extend %flex-row; 
+}
+.delivery {
+    @extend %flex-class;
+}
+.payment {
+    @extend %flex-class;
+}
+.promo {
+    @extend %flex-class;
+}
+.support {
+    @extend %flex-class;
+}
+.pros__content-text {
+    padding-left: 22px
+}
+.text__top {
+    @include font-style ($main-color,18px,$main-font,400,none)
+}
+.text__bottom {
+    opacity: 0.75;
+    padding-top: 7px;
+    @include font-style ($main-color,14px,$main-font,500,none)
+}

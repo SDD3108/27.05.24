@@ -1,0 +1,52 @@
+.footer__content {
+    margin: 140px auto 0;
+    display: flex;
+    // @extend %flex-center;
+    h3 {
+        @include font-style ($main-color,24px,$main-font,500,none)
+    }
+    p {
+        @include font-style ($main-color,16px,$main-font,400,none)
+    }
+}
+.footer__content-title {
+    text-align: center;
+    padding: 91.02px 0 69px 0;
+    p {
+        @include font-style ($main-color,16px,$main-font,400,none)
+    }
+}
+.section {
+    p {
+        margin-top: 41px;
+    }
+}
+.section2 {
+    padding: 10px 0 0 150px;
+}
+.section2__li {
+    height: 124px;
+    margin-top: 41px;
+    @extend %flex-column;
+}
+.section3 {
+    padding: 10px 0 0 91px;
+}
+.section4 {
+    padding: 10px 0 0 90px;
+    button {
+        width: 118px;
+        height: 50px;
+        background-color: $base-color;
+        margin: 37px 0 0 15px;
+        @include font-style ($white-color,14px,$main-font,400,none)
+    }
+    p {
+        margin-top: 41px;
+    }
+}
+.section__img {
+    width: 100px;
+    @extend %flex-row;
+    margin-top: 51.6px;
+}

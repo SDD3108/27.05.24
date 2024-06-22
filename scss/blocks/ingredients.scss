@@ -1,0 +1,23 @@
+.ingredients__content {
+    height: 459px;
+    text-align: center;
+    @extend %flex-center;
+    background: linear-gradient(rgba(2, 2, 2, 0.59), rgba(2, 2, 2, 0.59)), url(/img/ingredients/Rectangle\ 8\ \(1\).png);
+    margin: 193px auto 0;
+    p {
+        @include font-style ($white-color,60px,$main-font,600,none)
+    }
+    button {
+        width: 210px;
+        height: 79px;
+        background-color: $base-color;
+        margin-top: 37px;
+
+        img {
+            padding-left: 23.59px;
+        }
+    }
+    a {
+        @include font-style ($white-color,16px,$main-font,400,none)
+    }
+}

@@ -1,0 +1,40 @@
+.veggie__content {
+    @extend %flex-row;
+    margin-top: 183px;
+}
+.veggie__content__text {
+    p {
+        @include font-style ($main-color,15px,$main-font,500,none)
+    }
+    button {
+        width: 233px;
+        height: 79px;
+        background-color: $base-color;
+        margin-top: 51px;
+        @include font-style ($white-color,16px,$main-font,400,none)
+    }
+}
+.veggie__content__text-products {
+    @extend %flex-row;
+    margin-top: 55px;
+}
+.product {
+    height: 82px;
+    @extend %flex-column;
+    text-align: center;
+    h3 {
+        @include font-style ($base-color,40px,$main-font,600,none)
+    }
+    p {
+        opacity: 0.65;
+        @include font-style ($main-color,15px,$main-font,400,none)
+    }
+}
+.veggie__content-canvas {
+    width: 541px;
+    height: 608px;
+    background-color: $canvas-bg;
+    img {
+        padding: 0 0 95px 96px;
+    }
+}
